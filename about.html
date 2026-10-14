@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0d7a6f">
+
+  <title>About | Rwendo: Placement Hours and Supervision</title>
+
+  <style>
+    :root {
+      --bg: #f3f6f4;
+      --card: #ffffff;
+      --text: #17201c;
+      --muted: #66736b;
+      --border: #d8e0db;
+      --green: #15803d;
+      --green-dark: #166534;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    main {
+      width: min(850px, calc(100% - 28px));
+      margin: 30px auto;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand img {
+      width: 46px;
+      height: 46px;
+      border-radius: 12px;
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 1.35rem;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .back {
+      display: inline-block;
+      text-decoration: none;
+      color: var(--green-dark);
+      font-weight: 700;
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 9px 13px;
+      border-radius: 12px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 14px;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .goal {
+      border-left: 4px solid var(--green);
+    }
+
+    .goal strong {
+      color: var(--green-dark);
+      font-size: 1.12rem;
+    }
+
+    .details {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .detail {
+      background: var(--bg);
+      border-radius: 12px;
+      padding: 13px;
+    }
+
+    .detail span {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      margin-bottom: 3px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+      padding: 10px 0 25px;
+    }
+
+    @media (max-width: 650px) {
+      main {
+        margin-top: 16px;
+      }
+
+      .topbar {
+        align-items: flex-start;
+      }
+
+      .details {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<main>
+
+  <header class="topbar">
+    <div class="brand">
+      <img src="icon-192.png" alt="Rwendo icon">
+      <div>
+        <h1>About Rwendo</h1>
+        <p>Placement hours and supervision, in one place.</p>
+      </div>
+    </div>
+
+    <a class="back" href="index.html">← Back</a>
+  </header>
+
+  <section class="card">
+    <h2>What is Rwendo?</h2>
+
+    <p>
+      <em>Rwendo</em> is the Shona word for a journey or a trip — the road
+      you travel rather than a single step on it. A placement is exactly
+      that: a long stretch of days, hours and supervision that adds up to a
+      qualification.
+    </p>
+
+    <p>
+      Rwendo is a time-tracking application designed to help students
+      record, manage and review the hours they complete during placements,
+      internships, practicums and professional experience — and to let a
+      supervisor verify those hours inside the same app.
+    </p>
+
+    <p>
+      Instead of relying on paper notes or manually calculating hours,
+      the app lets you start and finish a shift, automatically calculates
+      the time completed and keeps a history of your placement activity.
+    </p>
+  </section>
+
+  <section class="card goal">
+    <h2>Your placement goal</h2>
+
+    <p>
+      You set your own required hours the first time you open the app, and
+      you can change the number at any time in Settings. Nursing, social
+      work, teaching, counselling, psychology and trades placements all have
+      different requirements, so nothing is fixed to one programme.
+    </p>
+
+    <p>
+      <strong>The default is 460 hours, with one-tap presets from 100 to 1000.</strong>
+    </p>
+
+    <p>
+      Once a target completion date is set, the app works out the weekly pace
+      you need and forecasts your finish date from the hours you have logged
+      so far.
+    </p>
+  </section>
+
+  <section class="card goal">
+    <h2>Supervisor notes and sign off</h2>
+
+    <p>
+      Your supervisor can work directly in the app rather than signing a
+      printout. On any shift, supervision session or whole week they can
+      leave a dated note under their own name, and approve the hours they
+      have checked.
+    </p>
+
+    <p>
+      Approval is protected by a <strong>supervisor PIN</strong>. The
+      supervisor sets it the first time they use it, and Rwendo stores only
+      a one-way hash of it — never the PIN itself. Notes, sign off, and
+      removing a sign off each ask for the PIN.
+    </p>
+
+    <p>
+      Once a shift is signed off it is locked: it cannot be edited or
+      deleted until the supervisor removes the sign off with their PIN. The
+      Today and Progress tabs show approved hours and hours still waiting
+      for sign off next to your usual totals, and the printable report sets
+      approved hours against pending ones.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Key Features</h2>
+
+    <ul>
+      <li>Start and finish shift timer</li>
+      <li>Automatic calculation of placement hours</li>
+      <li>Add previous or missed shifts manually</li>
+      <li>Edit and delete recorded shifts</li>
+      <li>Record unpaid break time</li>
+      <li>Weekly, monthly and total-hour summaries</li>
+      <li>Progress tracking toward required placement hours</li>
+      <li>Google Sign-In</li>
+      <li>Private cloud synchronisation using Firebase Firestore</li>
+      <li>Local offline storage</li>
+      <li>CSV export</li>
+      <li>Printable / PDF placement records</li>
+      <li>Backup and restore</li>
+      <li>Light, dark and system appearance, with eight accent colours</li>
+      <li>Completion forecast and weekly pace guidance</li>
+      <li>Placement insights and eight-week activity chart</li>
+      <li>Milestone celebrations</li>
+      <li>Professional placement report for PDF or printing</li>
+      <li>Supervision log with topics, reflections, actions and sign-off</li>
+      <li>Supervision log included in full on the printable report</li>
+      <li>Supervisor notes on any shift, supervision session or week, each showing the supervisor's name and date</li>
+      <li>Supervisor sign off per shift and per whole week, recording name, date and hours approved</li>
+      <li>Approved hours and hours awaiting sign off shown beside your totals</li>
+      <li>Signed-off shifts locked against editing and deletion</li>
+      <li>Supervisor PIN, stored only as a hash, for every supervisor action</li>
+      <li>Notes and sign-off details carried into the report, the CSV export and backups</li>
+      <li>New shifts prefilled from your usual hours</li>
+      <li>Tag hours by activity, with a breakdown chart and report section</li>
+      <li>Clickable month calendar shaded by how long each day was</li>
+      <li>Weekday pattern, supervision-due tracker and missed-day prompts</li>
+      <li>Guided first-run setup with required-hours presets</li>
+      <li>A separate private record for every person who signs in</li>
+      <li>Installable on a phone and usable with no internet connection</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Privacy and Ownership</h2>
+
+    <p>
+      Each signed-in user has their own placement record. Placement data
+      is stored under the user's Firebase account identifier and access is
+      controlled using Firebase Authentication and Firestore Security Rules.
+      Rwendo uses its own Firebase project and its own browser storage, kept
+      separate from any other app published by the same developer.
+    </p>
+
+    <p>
+      On a shared computer each account is kept in its own separate store on
+      the device as well, so signing in never mixes your hours with someone
+      else's and signing out hides your record from the next person.
+    </p>
+
+    <p>
+      More information is available on the
+      <a href="privacy.html">Privacy Policy</a> page.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>Who is it for?</h2>
+
+    <p>
+      Rwendo is intended for students and trainees who need a
+      straightforward way to document hours completed as part of practical
+      learning, workplace experience or professional placement requirements,
+      and for the supervisors who have to verify them.
+      It is free to use — share the link with anyone on your course and each
+      of you gets your own private tracker.
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>App Details</h2>
+
+    <div class="details">
+      <div class="detail">
+        <span>Application</span>
+        <strong>Rwendo</strong>
+      </div>
+
+      <div class="detail">
+        <span>Developer</span>
+        <strong>Munashe</strong>
+      </div>
+
+      <div class="detail">
+        <span>Version</span>
+        <strong>1.0</strong>
+      </div>
+
+      <div class="detail">
+        <span>Updated</span>
+        <strong>October 2026</strong>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+Rwendo: Placement Hours and Supervision · Built by Munashe
+  </footer>
+
+</main>
+
+</body>
+</html>
